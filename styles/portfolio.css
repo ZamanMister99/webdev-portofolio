@@ -111,6 +111,10 @@ header {
 
 /* Main Section Styles */
 
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
 
 /* About Section Styles */
 
@@ -119,7 +123,23 @@ header {
     border-radius: 10px;
     background: #FFF8F3;
     margin-top: 130px;
-    margin-left: 230px;
-    margin-right: 230px;
+    /* margin-left: 230px;
+    margin-right: 230px; */
   
+}
+
+.about-info-container {
+    display: flex;
+    justify-content: space-around;
+}
+.about-info{
+    text-align: center;
+}
+
+.info-title{
+    font-weight: normal;
+}
+
+info-description{
+    font-weight: bold;
 }
