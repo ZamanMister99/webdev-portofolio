@@ -123,6 +123,7 @@ main section {
 /* About Section Styles */
 
 .about {
+    /* border: solid blue; */
     padding :130px;
     border-radius: 10px;
     background: #FFF8F3;
@@ -238,4 +239,77 @@ textarea{     /* excludes SUBMIT BUTTON from width 100% */
     border: 0;
     width: 100%;
 
+}
+
+
+
+/* ********************************** */
+/* RESPONSIVE STYLES  */
+/* ********************************** */
+
+/* Mobile Devices */
+
+.hide {
+    display: none;
+}
+@media screen and (max-width:576px) {
+    
+    nav {
+        flex-direction: column;
+    }
+    nav >ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .header {
+        background-image: none;
+    }
+    .banner{
+
+        flex-direction: column;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+    .banner .profile-pic {
+        width: 100%;
+    }
+    .skills-container, .resume-container {
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    .banner, #what-i-do-description {
+        padding: 15px
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 10px;
+        align-content: center;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .contact input[type ="text"], .contact input[type ="email"], textarea{
+        width: 80%;
+        margin: 10px
+    }
+
+    .about-info-container {
+        flex-direction: column;
+    }
+    .about {
+        padding: 40px;
+    }
+  
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+
+    .skills-container, .resume-container {
+        flex-direction: column;
+    }
 }
